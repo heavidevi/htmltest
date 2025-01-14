@@ -1,0 +1,13 @@
+#mycss
+{
+    font-style: italic;
+}
+
+.hello
+{
+    font-size: x-large;
+    color: brown;
+}
+body, html {
+    scroll-behavior: smooth;
+}
