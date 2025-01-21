@@ -33,37 +33,32 @@
     
         }
         .box{
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    transition-property:width;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-    transition-delay:0.5s;
-    animation-name: stretch;
-    animation-timing-function: ease-in-out;
-    animation-duration: 2s;
-    animation-delay: 0.5s;
-    animation-iteration-count: infinite;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition-property:width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay:0.5s;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            animation-name: rotate;
+            
+        }
+        @media only screen and (maxwidth:800px) {
+            background-color:red;
+            
         }
 
 
-}
+
 
 .box:hover{
     width: 200px;
 }
 
-@keyframes stretch{
-    0%{transform: scale(1);}
-    50%{transform: scale(1.5);}
-    100%{tranform :scale(1)}
-}
-@keyframes rotate {
-    0% {transform:rotate(0deg) ;}
-    100%{transform: rotate(360deg);}
-    
-}
     </style>
 </head>
 <body>
@@ -81,7 +76,6 @@
             <li>hello</li>
         </ul>
     </div>
-    <div class="box"></div>
 
     
 </body>
