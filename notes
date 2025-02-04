@@ -5,3 +5,17 @@ absolute : allwowing to be placed without affecting the other element layout(par
 sticky : by deafult page per hi rehti hai (its movable but can stop at some point then ramins at some point)
                           
 fixed : remains on its position even scrolling
+
+
+##JAVASCRIPT##
+synchronous programminglanguage only performs one language at a time
+but it acts like asynchronous hai
+
+cross browser compatibility:  js har modern browser per support horaha hai.
+
+rich ecosystem of libraries and framwork: jquery,react and angular making it streaamline in development
+framwork: a system ewhich makesthe required code written in already
+library: aik small part whereas framwork full fledged code module hota
+
+javascript requires an engine which:node environemnt providing the requirement to ru non js
+
