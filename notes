@@ -19,3 +19,31 @@ library: aik small part whereas framwork full fledged code module hota
 
 javascript requires an engine which:node environemnt providing the requirement to ru non js
 
+**PASS BY REFERENCE VS PASS BY VALUE**
+pass by reference only takes the address of the the key not the address of the value so it depends on the case weather the object copied
+if the object in non-primitive object is changed the addres of value doesn't change
+hence making the value different and making it more 
+
+// console.log(user1.name1,user2,user2.ispakistani)
+
+object1=[1,2,3,4]
+object2=object1
+
+object1[2]=4
+// console.log(object2,object1)
+{{{output : [1,2,4,4][1,2,4,4}}}
+o1={name:"ali",age:12}
+o2=o1
+o1.name="ahmmed"
+console.log(o1)
+console.log(o2)
+{{{output : o1:{testing}
+  o2:{ali,12}  }}}
+
+nameageobejct={name:"ali",age:13}
+//using spread operator for cloning 
+nameAgeEmail={...nameageobejct,email:"123@outlookl.com"}  //p  js ka featue hai of "..." for cloning and making it pass by value
+nameAgeEmail.name="123"
+console.log(nameAgeEmail,nameageobejct)
+
+OUTPUT{{{{ name: '123', age: 13, email: '123@outlookl.com' } { name: 'ali', age: 13 }   }}}
