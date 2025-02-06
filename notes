@@ -47,3 +47,20 @@ nameAgeEmail.name="123"
 console.log(nameAgeEmail,nameageobejct)
 
 OUTPUT{{{{ name: '123', age: 13, email: '123@outlookl.com' } { name: 'ali', age: 13 }   }}}
+
+'''scope and datatype'''
+var: change hoskta hai
+let: sirf aik aik scope k andar hi changes ker saktay ho k aik scope mein at a time to change hojayega
+const: doesn't change for anythin but in non-primitive datatype the key value pair can be changed. but overall change nhi kersaktay
+
+'''primitived datatype'''
+string,boolean,number,undefined,null
+
+''non primitive datatype'''
+array,object,function
+
+'''time and date'''
+
+var a= new Date()
+console.log(a)
+
