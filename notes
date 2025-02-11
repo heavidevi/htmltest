@@ -24,34 +24,34 @@ pass by reference only takes the address of the the key not the address of the v
 if the object in non-primitive object is changed the addres of value doesn't change
 hence making the value different and making it more 
 
-// console.log(user1.name1,user2,user2.ispakistani)
-
-object1=[1,2,3,4]
-object2=object1
-
-object1[2]=4
-// console.log(object2,object1)
-{{{output : [1,2,4,4][1,2,4,4}}}
-o1={name:"ali",age:12}
-o2=o1
-o1.name="ahmmed"
-console.log(o1)
-console.log(o2)
-{{{output : o1:{testing}
-  o2:{ali,12}  }}}
-
-nameageobejct={name:"ali",age:13}
-//using spread operator for cloning 
-nameAgeEmail={...nameageobejct,email:"123@outlookl.com"}  //p  js ka featue hai of "..." for cloning and making it pass by value
-nameAgeEmail.name="123"
-console.log(nameAgeEmail,nameageobejct)
-
-OUTPUT{{{{ name: '123', age: 13, email: '123@outlookl.com' } { name: 'ali', age: 13 }   }}}
+          // console.log(user1.name1,user2,user2.ispakistani)
+          
+          object1=[1,2,3,4]
+          object2=object1
+          
+          object1[2]=4
+          // console.log(object2,object1)
+          {{{output : [1,2,4,4][1,2,4,4}}}
+          o1={name:"ali",age:12}
+          o2=o1
+          o1.name="ahmmed"
+          console.log(o1)
+          console.log(o2)
+          {{{output : o1:{testing}
+            o2:{ali,12}  }}}
+          
+          nameageobejct={name:"ali",age:13}
+          //using spread operator for cloning 
+          nameAgeEmail={...nameageobejct,email:"123@outlookl.com"}  //p  js ka featue hai of "..." for cloning and making it pass by value
+          nameAgeEmail.name="123"
+          console.log(nameAgeEmail,nameageobejct)
+          
+          OUTPUT{{{{ name: '123', age: 13, email: '123@outlookl.com' } { name: 'ali', age: 13 }   }}}
 
 '''scope and datatype'''
 var: change hoskta hai
 let: sirf aik aik scope k andar hi changes ker saktay ho k aik scope mein at a time to change hojayega
-const: doesn't change for anythin but in non-primitive datatype the key value pair can be changed. but overall change nhi kersaktay
+const: doesn't change for anythinG but in non-primitive datatype the key value pair can be changed. but overall change nhi kersaktay
 
 '''primitived datatype'''
 string,boolean,number,undefined,null
@@ -61,6 +61,137 @@ array,object,function
 
 '''time and date'''
 
-var a= new Date()
-console.log(a)
+                  var a= new Date()
+                  console.log(a)
 
+
+'''push and unshift in array'''
+unshift:baki values in array ko shioft kerke pehle mein daal deta hai
+push: kernayse nayi value ko end mein daal deta hai.
+
+pop:removes last element
+shift:removes first element
+                            !!!numarray=['apple','banana',31]
+                            numarray.push("1323")
+                            console.log(numarray)
+                          
+                            numarray.pop()
+                            
+                            numarray.unshift("8t683716489",1331,14)
+                            console.log(numarray)
+                            !!!
+
+
+''''concat  |  include | isarraay''''
+
+                            '''numarray=numarray.concat("hello")
+                            console.log(numarray)
+                            {{{//output[ '8t683716489', 1331, 14, 'apple', 'banana', 31, 'hello' ]}}
+                            
+                            console.log(numarray.includes("hello"))
+                            //{output true}
+                            
+                            console.log(Array.isArray(numarray))
+                            //{{{OUTPUT: true}}}'''
+
+'''slice vs splice'''
+slice:stores seleceted value from array in to new value. naya address ban jata hai memeory k ander jo it makea copy from one main array to second smaller array
+                          number=[123,456,6789,24234,84,7182]
+                          newnumber=number.slice(1,2)
+                          console.log(newnumber,"   ",number)
+                    //{{{OUPUT        [ 456 ]        [ 123, 456, 6789, 24234, 84, 7182 ]}}
+
+
+
+splice: changes the content of an array inspecific values
+              
+              '''number.splice(1,5) // first is taring index ,scnd is wha se kinte agay ka 
+              console.l ; og(number)'''
+              {{{output  [ 123 ]}}
+
+            number=[123,456,6789,24234,84,7182]
+             ''' newnumber=number.slice()
+              console.log(newnumber,"   ",number)
+              //[ 456 ]     [ 123, 456, 6789, 24234, 84, 7182 ]
+              
+              
+              number.splice(1,3,newnumber) // first is taring index ,scnd is wha se kinte agay ka 
+              console.log(number)'''
+              {{{OUPUT [ 123, [ 123, 456, 6789, 24234, 84, 7182 ], 84, 7182 ]}}}
+        ***splice se we can chang ete value***
+
+'''shallow copy vs deep copy'''
+jab aik array ko dusre array mein copy kerte hai toh toh jo values hai on arraywo by reference hoti hai 
+
+                         ''' number=[123,456,6789,24234,84,7182]
+                          newnumber=number
+                          console.log(newnumber,"   ",number)
+                          
+                          
+                          newnumber[0]="green"
+                          console.log(newnumber,"newnumber")
+                          console.log(number,"number")'''
+                        {{{OUPTUT [ 'green', 456, 6789, 24234, 84, 7182 ] newnumber
+                                      [ 'green', 456, 6789, 24234, 84, 7182 ] number}}}
+'''MAKING OTHER OBJECTS'''  
+              '''product={name:"HP ELiutenbook Sleeve",
+                  inStock:true,
+                  price:1000,
+                  totalUnitss:7,
+                  colors:["black","white","gray"]
+              }
+              
+              console.log(product)
+              console.log(product.name)
+              console.log(product["name"])   aesay bhi acces krssktay hai
+
+'''math module'''
+                            
+                            ''' product.rnnumber:Math.random()*100
+                            }
+                            
+                            
+                            console.log(product.rnnumber) gives random value'''
+
+to have interger random value
+                                    product={name:"HP ELiutenbook Sleeve",
+                                      
+                                        rnnumber:Math.random()*100
+                               product={name:"HP ELiutenbook Sleeve",
+    inStock:true,
+    price:1000,
+    totalUnitss:7,
+    colors:["black","white","gray"],
+    rnnumber:Math.random()*100product={name:"HP ELiutenbook Sleeve",
+    inStock:true,
+    price:1000,
+    totalUnitss:7,
+    colors:["black","white","gray"],
+    rnnumber:Math.random()*100
+}
+
+// console.log(product)
+// console.log(product.name)
+// console.log(product["name"])
+
+console.log(Math.floor(product.rnnumber))
+
+}
+
+// console.log(product)
+// console.log(product.name)
+// console.log(product["name"])
+
+console.log(Math.floor(product.rnnumber))
+     }
+                                    
+                                    console.log(Math.floor(product.rnnumber))
+
+
+
+
+
+              
+
+
+                              
