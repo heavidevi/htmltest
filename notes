@@ -187,6 +187,49 @@ console.log(Math.floor(product.rnnumber))
                                     
                                     console.log(Math.floor(product.rnnumber))
 
+'''add,modify,delete'''
+
+
+
+                                      add: <objectnaame>.<key>
+                                      delete:   delete <objectname>.<key>
+
+'''Javascript control flow and loop'''
+  if...else statement
+                          
+                                      if(condition){
+                                          statement1;
+                                      } else {
+                                            statement2}   
+
+truthy values and falsy values:
+wo values jo false ko indicate ekrte hai 
+false
+0(integer)
+-0(negative zero)
+""(empty string)
+null
+undefined
+NaN(not a numeber)
+
+
+
+                                        
+                                        let isuserlogin=true;
+                                        let pro=true;
+                                        
+                                        if(isuserlogin && pro){
+                                            console.log("thanks, you are a pro subscriber")
+                                        }else if(isuserlogin){
+                                            console.log("here is your data consider subcribeing to get full fetures")
+                                        }else{
+                                            console.log("please login first")
+                                        }
+
+
+
+
+
 
 
 
