@@ -243,6 +243,53 @@ if (mark>90){
 }
 
 
+'''CASE statement'''
+
+                                       percentage=85
+
+                                        switch(true){   #switch mein boolean value jaati hai hihai toh wo boolean vs boolean dekhay ga
+                                            case percentage>=90:
+                                                console.log("A+")
+                                                break
+                                            case percentage>=80:
+                                                console.log("A")
+                                                break
+                                            default:
+                                                console.log("fail")
+                                                break
+                                        }
+
+
+'''LOOP'''
+
+
+                                       {{       for (let i=1;i<=5;i++){
+                                                  console.log(i)
+                                                }        }}
+
+'''continue vs break'''
+
+                          for(let i=20;i>=1;i--){
+                              if(i===15){
+                                  continue
+                              }
+                              console.log(i)
+                              
+                          }
+                          OUTPUT:  eveything except 15 
+                            
+                              for(let i=20;i>=1;i--){
+                                if(i===15){
+                                    continue
+                                }
+                                console.log(i)
+                                
+                            }
+                            OUTPUT:  20,19,18,17,16
+
+
+
+
 
 
 
