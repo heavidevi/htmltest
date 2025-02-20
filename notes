@@ -289,11 +289,49 @@ if (mark>90){
 
 
 
-
+'''while''   :checks condition before 
+                                            
+                                            while(i!=j){
+                                                if (i>j){
+                                                    console.log("iis greater")
+                                            
+                                                }else if(j>i){
+                                                    console.log("j is greater")
+                                                }else {
+                                                    i=Math.floor(Math.random(100));
+                                                    j=Math.floor(Math.random(100));
+                                            
+                                                }
+                                            }
+                                            console.log("barbar hai",i,j)
 
 
 
               
+'''do while'''  check baad mein condition at end
 
+                              i=3
+                              do{
+                                  console.log(i)
+                              }while(i<5)
 
                               
+'''methods'''
+
+.length:return length
+.indexOf("x")=returnthe positionof certain character
+.upperCaseto: retru nstring upper casecharacter
+
+
+
+'''split''
+                                                  text="Hello words"
+                                                  word=text.split(" ")
+                                                  OUTPUT:['Hello","words"]
+
+'''trim'''
+removes whitspace from agayand peeche
+
+
+
+
