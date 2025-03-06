@@ -334,4 +334,78 @@ removes whitspace from agayand peeche
 
 
 
+'''event listener'''
+                                <body>
+   
+    
+    <!-- <input type="text" id="input">
+
+    <h1 id="name"></h1> -->
+
+
+    <script>
+        // const input=document.getElementById('input');
+        // const h1=document.getElementById('name');
+        // function inputAction(e){+
+        //     console.log(e);
+        //     h1.textContent=this.value;
+        // }
+        // input.addEventListener('input',inputAction)
+
+
+'''arrow function, callback, higher order functions, map and filter'''
+
+                        function multiply(a,b){
+                                return a*b}
+                        
+    experssion function      const divide=fucntion(a,b){
+                                        return a/b}
+
+    arrow function           conct subract=function(a,b)=>a-b;
+
+    callback function     function greet(anem,callback){
+                                      cosole.log('hello',+ name)
+                                      callaback()
+                          function saygoodbye(){
+                                    console.log(goodbye!)}
+                          greet("alice",saygoodbye)
+
+            !!!callback fucntion are used to aik function ke badd dusre function ko callaback kert hai
+
+          csllbsck function===higher order function
+
+''''CLOSURE FUCTION'''
+                          const hof=()=>{
+                                let init =0;                               // ye sirf aik daafa phir value update hojye gi
+                                return ()=>{
+                                          console.log(++inint);          //js mein init ki value update hoti rehgi and next time srf return function his work kerta hai
+                                     }
+                          const increment=hof();
+                          increment()
+                          incrmeent()
+
+
+
+'''MAP'''
+                                      const numbers=[1,2,3,4,5]
+                                      const doubled=numbers.map(number=>numbers*2)
+                                      doubled=[2,4,6,8,10]
+'''filter'''
+                                      const number=[1,2,3,4,5]
+                                      const evens=number.filter(number=>number%2===0)
+                                      ///wohi values ayegi jo true hoti uske ilawa nhi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
