@@ -397,6 +397,28 @@ removes whitspace from agayand peeche
 
 
 
+'''destucturing'''
+
+                          {{{// const car = { make: "toyota", model: 'camry' }
+
+
+                                    
+                                    // const { make, model } = car
+                                    // console.log(make, model) }}}
+
+
+'''asynchrnous programming'''
+
+
+                        using callback fucntion
+
+'''promise'''
+
+represent a a way of handling asynchrnous operations in a more organized way
+
+
+
+
 
 
 
